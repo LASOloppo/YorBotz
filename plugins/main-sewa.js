@@ -4,21 +4,18 @@ let handler = async (m, { conn }) => {
     pepe = 'https://telegra.ph/file/b31b5f0109ff5bd098704.jpg'
     baper = await fetch(pepe).then(a => a.buffer())
     let listMessage = {
-        "title": "◈ Made by Zens",
+        "title": "◈ Made by Atsair",
         "description": `
-┌「 *Sewa bot* 」
-│     
-├ 1 Grup / 30 Hari
-├ Rp. 10,000 Gopay
-├ Rp. 15,000 Pulsa Three
-│
-├ 1 Premium / 30 Hari
-├ Rp. 5,000 Gopay
-├ Rp. 10,000 Pulsa Three
-│
-├ tertarik? hubungi: 
-├ @62895604670507   (Zenss)
-└────
+╭───────[ *SEWA* ]
+┃⫹⫺ *𝙷𝙴𝙼𝙰𝚃:* 3k/grup [1 minggu]
+┃⫹⫺ *𝙽𝙾𝚁𝙼𝙰𝙻:* 7k/grup [1 bulan]
+┃⫹⫺ *𝚅𝙸𝙿:* 10K [9 bulan]
+┃⫹⫺ *𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽:* 15k [UNLIMITED]
+┗──────────❑
+[JADI BOT LANGSUNG SCAN?20K]
+tertarik? hubungi: 
+ @6289510402229   (Atsair)
+
 `.trim(),
         "listType": "PRODUCT_LIST",
         "productListInfo": {
@@ -36,9 +33,9 @@ let handler = async (m, { conn }) => {
                 "productId": "4730029423700586",
                 "jpegThumbnail": baper
             },
-            "businessOwnerJid": "62895604670507@s.whatsapp.net"
+            "businessOwnerJid": "6289510402229@s.whatsapp.net"
         },
-        "footerText": "https://wa.me/c/62895604670507\n\nowner number : wa.me/62895604670507"
+        "footerText": "https://wa.me/c/6289510402229\n\nowner number : wa.me/6289510402229"
     }
     conn.sendMessage(m.chat, listMessage, 'listMessage', { quoted: m, contextInfo: { mentionedJid: conn.parseMention(listMessage.description) } })
 }
